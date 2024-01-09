@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "apollodebug",
+  "version": "${version}",
+  "name": "ApolloDebug",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Moose/ApolloDebug"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/apollodebug/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.moose.apollodebug.client.ApolloDebugClient"
+    ],
+    "main": [
+      "me.moose.apollodebug.ApolloDebug"
+    ]
+  },
+  "mixins": [
+    "apollodebug.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
